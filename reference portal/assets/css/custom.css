@@ -389,3 +389,45 @@ p, a, h1, h2, h3, h4, h5, h6{
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.18),0px 4px 6px rgba(0, 0, 0, 0.24);
 }
 
+.welcome .btn-cta{
+  border-radius: 40px;
+  font-size: 14px;
+  padding: 10px 20px;
+  color:#FFF;
+  background: #3D4DBB;
+}
+.welcome .btn-cta:hover{
+  color:#FFF;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.18),0px 4px 6px rgba(0, 0, 0, 0.24);
+}
+.welcome .btn-back{
+  border-radius: 40px;
+  font-size: 14px;
+  padding: 10px 20px;
+  color:#666;
+  background: #f8f9fa;
+}
+.welcome .btn-back:hover{
+  color:#222;
+  background: #F4F4F4;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.04),0px 4px 6px rgba(0, 0, 0, 0.06);
+}
+.welcome .btn-cta::after{
+  color:#3D4DBB;
+}
+.welcome .btn-cta:hover::after{
+  color:#FFF;
+}
+.welcome .btn-back::before{
+  color:#f8f9fa;
+}
+.welcome .btn-back:hover::before{
+  color:#222;
+}
+.welcome .btn-cta::after, .welcome .btn-back::before{
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
