@@ -11,13 +11,13 @@
   <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
   <!-- Font Awesome 5 -->
   <link rel="stylesheet" href="../assets/libs/@fortawesome/fontawesome-free/css/all.min.css"><!-- Page CSS -->
-  <link rel="stylesheet" href="../assets/libs/select2/dist/css/select2.min.css">  
+  <link rel="stylesheet" href="../assets/libs/select2/dist/css/select2.min.css">
   <!-- Purpose CSS -->
   <link rel="stylesheet" href="../assets/css/purpose.css" id="stylesheet">
 </head>
 
 <body class="application application-offset">
-  
+
   <!-- Application container -->
   <div class="container-fluid container-application">
     <!-- Sidenav -->
@@ -97,12 +97,12 @@
         </a>
       </div>
       <!-- Misc area -->
-      
+
     </div>
     <!-- Content -->
     <div class="main-content position-relative">
       <!-- Main nav -->
-      
+
       <!-- Page content -->
       <div class="page-content">
         <!-- Create project modal -->
@@ -140,32 +140,50 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                       <div class="form-group">
                           <label class="form-control-label">Customer</label>
                           <select class="form-control select2-customers" data-toggle="select">
-                              <option value="Argus">Argus</option>
-                              <option value="Cigna">Cigna</option>
-                              <option value="Vision X">Vision X</option>
-                              <option value="Envision">Envision</option>
-                              <option value="CVS/Caremark">CVS/Caremark</option>
-                              <option value="OptumRx">OptumRx</option>
+                              <option value="Cleaning Masters">Cleaning Masters</option>
+                              <option value="Documenter">Documenter</option>
+                              <option value="The Number One Lab">The Number One Lab</option>
+                              <option value="Treegoos">Treegoos</option>
                           </select>
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
+                          <label class="form-control-label">Status</label>
+                          <select class="form-control select2-customers" data-toggle="select">
+                              <option value="To be Done">To be Done</option>
+                              <option value="In Progress">In Progress</option>
+                              <option value="Done">Done</option>
+                              <option value="Canceled">Canceled</option>
+                          </select>
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
                         <label class="form-control-label mb-0">Contacts</label>
-                        <small class="form-text text-muted mb-2 mt-0">Any preferred contact way</small>
+                        <small class="form-text text-muted mb-2 mt-0">Any preferred prospect contact way</small>
                         <textarea class="form-control" data-toggle="autosize" rows="2"></textarea>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                       <div class="form-group">
                         <label class="form-control-label mb-0">Description</label>
                         <small class="form-text text-muted mb-2 mt-0">Challenge you are facing or what kind of feedback is needed</small>
+                        <textarea class="form-control" data-toggle="autosize" rows="2"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label class="form-control-label mb-0">Note</label>
+                        <small class="form-text text-muted mb-2 mt-0">Any internal information important for making this request happen</small>
                         <textarea class="form-control" data-toggle="autosize" rows="2"></textarea>
                       </div>
                     </div>
@@ -174,7 +192,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-sm btn-secondary rounded-pill" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-sm btn-primary rounded-pill" data-dismiss="modal">Add</button>
+                <button type="button" class="btn btn-sm btn-primary rounded-pill" data-dismiss="modal">Save</button>
               </div>
             </div>
           </div>
@@ -302,15 +320,15 @@
                 </tr>
               </thead>
               <tbody class="list">
-                <tr class="row-status-toBeDone">                     
+                <tr class="row-status-toBeDone">
                   <td scope="row" class="id">
-                    <a class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1053</a>
-                  </td>  
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1053</a>
+                  </td>
                   <td>
                     <a href="#" data-toggle="popover" data-placement="top" data-content="It's empty. Yet.">
                       <i class="far text-muted fa-comment-alt"></i>
                     </a>
-                  </td>                  
+                  </td>
                   <td class="name">
                     <div class="media-body">
                       <strong>Ariana Barros</strong>
@@ -331,7 +349,8 @@
                             <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
                             <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
                             <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
-                            <a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
+                            <div class="dropdown-divider"></div>
+<a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
                         </div>
                       </a>
                     </div>
@@ -353,15 +372,15 @@
                       </div>
                   </td>
                 </tr>
-                <tr class="row-status-toBeDone">                     
+                <tr class="row-status-toBeDone">
                   <td scope="row" class="id">
-                    <a class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1054</a>
-                  </td>  
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1054</a>
+                  </td>
                   <td>
                     <a href="#" data-toggle="popover" data-placement="top" data-content="It's empty. Yet.">
                       <i class="far text-muted fa-comment-alt"></i>
                     </a>
-                  </td>                  
+                  </td>
                   <td class="name">
                     <div class="media-body">
                       <strong>Nick Duddler</strong>
@@ -382,7 +401,8 @@
                             <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
                             <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
                             <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
-                            <a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
+                            <div class="dropdown-divider"></div>
+<a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
                         </div>
                       </a>
                     </div>
@@ -404,15 +424,15 @@
                       </div>
                   </td>
                 </tr>
-                <tr class="row-status-toBeDone">                     
+                <tr class="row-status-toBeDone">
                   <td scope="row" class="id">
-                    <a class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1058</a>
-                  </td>  
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1058</a>
+                  </td>
                   <td>
                     <a href="#" data-toggle="popover" data-placement="top" data-content="It's empty. Yet.">
                       <i class="far text-muted fa-comment-alt"></i>
                     </a>
-                  </td>                  
+                  </td>
                   <td class="name">
                     <div class="media-body">
                       <strong>Alex Walkmer</strong>
@@ -433,7 +453,8 @@
                             <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
                             <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
                             <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
-                            <a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
+                            <div class="dropdown-divider"></div>
+<a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
                         </div>
                       </a>
                     </div>
@@ -455,15 +476,15 @@
                       </div>
                   </td>
                 </tr>
-                <tr class="row-status-inProgress">                     
+                <tr class="row-status-inProgress">
                   <td scope="row" class="id">
-                    <a class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1059</a>
-                  </td>  
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1059</a>
+                  </td>
                   <td>
                     <a href="#" data-toggle="popover" data-placement="top" data-content="It's empty. Yet.">
                       <i class="far text-muted fa-comment-alt"></i>
                     </a>
-                  </td>                  
+                  </td>
                   <td class="name">
                     <div class="media-body">
                       <strong>John Sullivan</strong>
@@ -484,7 +505,8 @@
                             <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
                             <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
                             <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
-                            <a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
+                            <div class="dropdown-divider"></div>
+<a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
                         </div>
                       </a>
                     </div>
@@ -506,15 +528,15 @@
                       </div>
                   </td>
                 </tr>
-                <tr class="row-status-inProgress">                     
+                <tr class="row-status-inProgress">
                   <td scope="row" class="id">
-                    <a class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1060</a>
-                  </td>  
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1060</a>
+                  </td>
                   <td>
                     <a href="#" data-toggle="popover" data-placement="top" data-content="Decided to move to the system in order to get all teams across different cities to the same process to ensure stable growth in the European region">
                       <i class="fas fa-comment-alt"></i>
                     </a>
-                  </td>                  
+                  </td>
                   <td class="name">
                     <div class="media-body">
                       <strong>James Lewis</strong>
@@ -535,7 +557,8 @@
                             <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
                             <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
                             <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
-                            <a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
+                            <div class="dropdown-divider"></div>
+<a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
                         </div>
                       </a>
                     </div>
@@ -557,15 +580,15 @@
                       </div>
                   </td>
                 </tr>
-                <tr class="row-status-inProgress">                     
+                <tr class="row-status-inProgress">
                   <td scope="row" class="id">
-                    <a class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1061</a>
-                  </td>  
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1061</a>
+                  </td>
                   <td>
                     <a href="#" data-toggle="popover" data-placement="top" data-content="Decided to move to the system in order to get all teams across different cities to the same process to ensure stable growth in the European region">
                       <i class="fas fa-comment-alt"></i>
                     </a>
-                  </td>                  
+                  </td>
                   <td class="name">
                     <div class="media-body">
                       <strong>Danielle Levin</strong>
@@ -586,7 +609,8 @@
                             <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
                             <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
                             <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
-                            <a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
+                            <div class="dropdown-divider"></div>
+<a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
                         </div>
                       </a>
                     </div>
@@ -608,15 +632,15 @@
                       </div>
                   </td>
                 </tr>
-                <tr class="row-status-inProgress">                     
+                <tr class="row-status-inProgress">
                   <td scope="row" class="id">
-                    <a class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1063</a>
-                  </td>  
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1063</a>
+                  </td>
                   <td>
                     <a href="#" data-toggle="popover" data-placement="top" data-content="It's empty! Yet.">
                       <i class="far fa-comment-alt"></i>
                     </a>
-                  </td>                  
+                  </td>
                   <td class="name">
                     <div class="media-body">
                       <strong>John Michael</strong>
@@ -637,6 +661,7 @@
                             <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
                             <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
                             <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
                         </div>
                       </a>
@@ -659,15 +684,15 @@
                       </div>
                   </td>
                 </tr>
-                <tr class="row-status-done">                     
+                <tr class="row-status-done">
                   <td scope="row" class="id">
-                    <a class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1064</a>
-                  </td>  
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1064</a>
+                  </td>
                   <td>
                     <a href="#" data-toggle="popover" data-placement="top" data-content="Decided to move to the system in order to get all teams across different cities to the same process to ensure stable growth in the European region">
                       <i class="fas fa-comment-alt"></i>
                     </a>
-                  </td>                  
+                  </td>
                   <td class="name">
                     <div class="media-body">
                       <strong>Parker Talor</strong>
@@ -688,6 +713,7 @@
                             <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
                             <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
                             <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
                         </div>
                       </a>
@@ -710,15 +736,15 @@
                       </div>
                   </td>
                 </tr>
-                <tr class="row-status-done">                     
+                <tr class="row-status-done">
                   <td scope="row" class="id">
-                    <a class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1065</a>
-                  </td>  
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1065</a>
+                  </td>
                   <td>
                     <a href="#" data-toggle="popover" data-placement="top" data-content="It's empty! Yet.">
                       <i class="far fa-comment-alt"></i>
                     </a>
-                  </td>                  
+                  </td>
                   <td class="name">
                     <div class="media-body">
                       <strong>Pall Monroe</strong>
@@ -739,6 +765,7 @@
                             <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
                             <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
                             <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
                         </div>
                       </a>
@@ -761,15 +788,15 @@
                       </div>
                   </td>
                 </tr>
-                <tr class="row-status-canceled">                     
+                <tr class="row-status-canceled">
                   <td scope="row" class="id">
-                    <a class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1066</a>
-                  </td>  
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1066</a>
+                  </td>
                   <td>
                     <a href="#" data-toggle="popover" data-placement="top" data-content="Decided to move to the system in order to get all teams across different cities to the same process to ensure stable growth in the European region">
                       <i class="fas fa-comment-alt"></i>
                     </a>
-                  </td>                  
+                  </td>
                   <td class="name">
                     <div class="media-body">
                       <strong>Monroe Parker</strong>
@@ -790,6 +817,7 @@
                             <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
                             <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
                             <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
                         </div>
                       </a>
@@ -832,10 +860,10 @@
             </li>
           </ul>
         </nav>
-      </div>      
+      </div>
     </div>
   </div>
-  
+
   <div class="container">
     <div class="footer pt-5 pb-4 footer-light" id="footer-main">
       <div class="row text-center text-sm-left align-items-sm-center">
