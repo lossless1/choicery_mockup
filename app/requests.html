@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Boost your sales by enabling your prospects to chat with your existing customers">
+  <meta name="author" content="Webpixels">
+  <title>Choicery</title>
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="../assets/libs/@fortawesome/fontawesome-free/css/all.min.css"><!-- Page CSS -->
+  <link rel="stylesheet" href="../assets/libs/select2/dist/css/select2.min.css">  
+  <!-- Purpose CSS -->
+  <link rel="stylesheet" href="../assets/css/purpose.css" id="stylesheet">
+</head>
+
+<body class="application application-offset">
+  
+  <!-- Application container -->
+  <div class="container-fluid container-application">
+    <!-- Sidenav -->
+    <div class="sidenav" id="sidenav-main">
+      <!-- Sidenav header -->
+      <div class="sidenav-header d-flex align-items-center">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../assets/img/brand/white.png" class="navbar-brand-img" alt="...">
+        </a>
+        <div class="ml-auto">
+          <!-- Sidenav toggler -->
+          <div class="sidenav-toggler sidenav-toggler-dark d-md-none" data-action="sidenav-unpin" data-target="#sidenav-main">
+            <div class="sidenav-toggler-inner">
+              <i class="sidenav-toggler-line bg-white"></i>
+              <i class="sidenav-toggler-line bg-white"></i>
+              <i class="sidenav-toggler-line bg-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- User mini profile -->
+      <div class="sidenav-user d-flex flex-column align-items-center justify-content-between text-center">
+        <!-- Avatar -->
+        <div>
+          <a href="#" class="avatar rounded-circle avatar-xl">
+            <img alt="Image placeholder" src="../assets/img/theme/light/team-1-800x800.jpg" class="">
+          </a>
+          <div class="mt-4">
+            <h5 class="mb-0 text-white">Alex Krasnov</h5>
+            <span class="d-block text-sm text-white opacity-8 mb-3">Manager</span>
+            <a href="#" class="btn btn-sm btn-white btn-icon rounded-pill shadow hover-translate-y-n3">
+              <span class="btn-inner--icon"><i class="fas fa-coins"></i></span>
+              <span class="btn-inner--text">Trial</span>
+            </a>
+          </div>
+        </div>
+        <!-- User info -->
+        <!-- Actions -->
+        <div class="w-100 mt-4 actions d-flex justify-content-between">
+          <a href="login/login.html" class="action-item action-item-lg text-white pr-0">
+            <i class="fas fa-sign-out-alt"></i>
+          </a>
+          <a href="profile.html" class="action-item action-item-lg text-white pl-0">
+            <i class="fas fa-user"></i>
+          </a>
+          <a href="#modal-chat" class="action-item action-item-lg text-white" data-toggle="modal">
+            <i class="fas fa-comment-alt"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Application nav -->
+      <div class="nav-application clearfix">
+        <a href="../app/index.html" class="btn btn-square text-sm">
+          <span class="btn-inner--icon d-block"><i class="fas fa-home fa-2x"></i></span>
+          <span class="btn-inner--icon d-block pt-2">Home</span>
+        </a>
+        <a href="../app/requests.html" class="btn btn-square text-sm active">
+          <span class="badge badge-pill badge-requests">3</span>
+          <span class="btn-inner--icon d-block"><i class="fas fa-tasks fa-2x"></i></span>
+          <span class="btn-inner--icon d-block pt-2">Requests</span>
+        </a>
+        <a href="../app/customers.html" class="btn btn-square text-sm">
+          <span class="btn-inner--icon d-block"><i class="fas fa-user-ninja fa-2x"></i></span>
+          <span class="btn-inner--icon d-block pt-2">Customers</span>
+        </a>
+        <a href="../app/settings.html" class="btn btn-square text-sm">
+          <span class="btn-inner--icon d-block"><i class="fas fa-cogs fa-2x"></i></span>
+          <span class="btn-inner--icon d-block pt-2">Settings</span>
+        </a>
+        <a href="../app/faq.html" class="btn btn-square text-sm">
+          <span class="btn-inner--icon d-block"><i class="fas fa-question-circle fa-2x"></i></span>
+          <span class="btn-inner--icon d-block pt-2">FAQ</span>
+        </a>
+        <a href="../app/support.html" class="btn btn-square text-sm">
+          <span class="btn-inner--icon d-block"><i class="fas fa-life-ring fa-2x"></i></span>
+          <span class="btn-inner--icon d-block pt-2">Support</span>
+        </a>
+      </div>
+      <!-- Misc area -->
+      
+    </div>
+    <!-- Content -->
+    <div class="main-content position-relative">
+      <!-- Main nav -->
+      
+      <!-- Page content -->
+      <div class="page-content">
+        <!-- Create project modal -->
+        <div class="modal fade modal-add" id="modal-project-create" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <form>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-control-label">Company name</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-control-label">Company website</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-control-label">Fullname</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="form-control-label">Position</label>
+                        <input type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <label class="form-control-label">Customer</label>
+                          <select class="form-control select2-customers" data-toggle="select">
+                              <option value="Cleaning Masters">Cleaning Masters</option>
+                              <option value="Documenter">Documenter</option>
+                              <option value="The Number One Lab">The Number One Lab</option>
+                              <option value="Treegoos">Treegoos</option>
+                          </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <label class="form-control-label">Status</label>
+                          <select class="form-control select2-customers" data-toggle="select">
+                              <option value="To be Done">To be Done</option>
+                              <option value="In Progress">In Progress</option>
+                              <option value="Done">Done</option>
+                              <option value="Canceled">Canceled</option>
+                          </select>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label class="form-control-label mb-0">Contacts</label>
+                        <small class="form-text text-muted mb-2 mt-0">Any preferred prospect contact way</small>
+                        <textarea class="form-control" data-toggle="autosize" rows="2"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label class="form-control-label mb-0">Description</label>
+                        <small class="form-text text-muted mb-2 mt-0">Challenge you are facing or what kind of feedback is needed</small>
+                        <textarea class="form-control" data-toggle="autosize" rows="2"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label class="form-control-label mb-0">Note</label>
+                        <small class="form-text text-muted mb-2 mt-0">Any internal information important for making this request happen</small>
+                        <textarea class="form-control" data-toggle="autosize" rows="2"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-secondary rounded-pill" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-sm btn-primary rounded-pill" data-dismiss="modal">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade modal-confirm"  id="modal-confirm" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Delete request</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Are you sure you want to delete request from <strong class="username">Ariana Barros</strong>?</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Page title -->
+        <div class="page-title mt-4">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-md-6 d-flex align-items-center justify-content-between justify-content-md-start mb-3 mb-md-0">
+              <!-- Page title + Go Back button -->
+              <div class="d-inline-block">
+                <h5 class="h4 d-inline-block font-weight-400 mb-0 text-white">
+                  <a href="#" class="sidenav-toggler mr-2" id="navigation-toggler" data-action="sidenav-pin" data-target="#sidenav-main"><i class="fas fa-bars"></i></a>
+                  Requests
+                </h5>
+              </div>
+              <!-- Additional info -->
+              <div class="align-items-center ml-4 d-inline-flex">
+                <span class="h4 text-info mb-0 mr-2">48</span>
+                <span class="text-sm opacity-7 text-white mr-2"> in total. </span>
+                <span class="h4 text-info mb-0 mr-2">3</span>
+                <span class="text-sm opacity-7 text-white"> are new!</span>
+              </div>
+              <!-- Optional link -->
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-between justify-content-md-end">
+              <div class="actions actions-dark d-inline-block">
+                <a href="#" class="action-item ml-md-4">
+                  <i class="fas fa-file-export mr-2"></i>Export
+                </a>
+<!--
+                <a href="#" class="action-item ml-3">
+                  <i class="fas fa-cog mr-2"></i>Settings
+                </a>
+-->
+              </div>
+              <a href="#modal-project-create" class="btn btn-sm btn-white btn-icon-only rounded-circle ml-4" data-toggle="modal">
+                <span class="btn-inner--icon"><i class="fas fa-plus"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Listing -->
+        <div class="card">
+          <!-- Card header -->
+          <div class="card-header actions-toolbar border-0">
+            <div class="actions-search" id="actions-search">
+              <div class="input-group input-group-merge input-group-flush">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-transparent"><i class="fas fa-search"></i></span>
+                </div>
+                <input type="text" class="form-control form-control-flush" placeholder="Type and hit enter ...">
+                <div class="input-group-append">
+                  <a href="#" class="input-group-text bg-transparent" data-action="search-close" data-target="#actions-search"><i class="fas fa-times"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-between align-items-center">
+              <div class="col">
+                <h6 class="d-inline-block mb-0">Requests</h6>
+              </div>
+              <div class="col text-right">
+                <div class="actions"><a href="#" class="action-item mr-3" data-action="search-open" data-target="#actions-search"><i class="fas fa-search"></i></a>
+                  <div class="dropdown mr-3">
+                    <a href="#" class="action-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-filter"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#">
+                        <i class="fas fa-sort-amount-down"></i>Newest
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="fas fa-sort-alpha-down"></i>From A-Z
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <i class="fas fa-sort-alpha-up"></i>From Z-A
+                      </a>
+                    </div>
+                  </div>
+                  <div class="dropdown" data-toggle="dropdown">
+                    <a href="#" class="action-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#" class="dropdown-item">Refresh</a>
+                      <a href="#" class="dropdown-item">Manage Widgets</a>
+                      <a href="#" class="dropdown-item">Settings</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Table -->
+          <div class="table-responsive">
+            <table class="table align-items-center">
+              <thead>
+                <tr>
+                  <th scope="col" class="sort" data-sort="id">Id</th>
+                  <th scope="col">Note</th>
+                  <th scope="col" class="sort" data-sort="name">Fullname</th>
+                  <th scope="col" class="sort" data-sort="company">Company</th>
+                  <th scope="col" class="sort" data-sort="customer">Customer</th>
+                  <th scope="col" class="sort" data-sort="status">Status</th>
+                  <th scope="col" class="sort" data-sort="lastModified">Last Modified</th>
+                  <th scope="col" class="text-right">Action</th>
+                </tr>
+              </thead>
+              <tbody class="list">
+                <tr class="row-status-toBeDone">                     
+                  <td scope="row" class="id">
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1053</a>
+                  </td>  
+                  <td>
+                    <a href="#" data-toggle="popover" data-placement="top" data-content="It's empty. Yet.">
+                      <i class="far text-muted fa-comment-alt"></i>
+                    </a>
+                  </td>                  
+                  <td class="name">
+                    <div class="media-body">
+                      <strong>Ariana Barros</strong>
+                      <small>Product Manager</small>
+                    </div>
+                  </td>
+                  <td class="company">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>Intalere</a>
+                  </td>
+                  <td class="customer">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>Treegoos</a>
+                  </td>
+                  <td class="status">
+                    <div class="dropdown status-toBeDone">
+                      <a href="#" class="" id="status-row-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge text-white rounded-pill dropdown-toggle status-value"> </span>
+                        <div class="dropdown-menu" aria-labelledby="status-row-1">
+                            <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
+                            <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
+                            <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
+                            <div class="dropdown-divider"></div>
+<a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
+                        </div>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="lastModified">
+                    Yesterday
+                  </td>
+                  <td class="col-actions text-right">
+                    <div class="dropdown" data-toggle="dropdown">
+                        <a href="#" class="action-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-h"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right menu-actions" aria-haspopup="true" aria-expanded="false">
+                          <a href="#" class="dropdown-item"><i class="fas fa-eye"></i>View</a>
+                          <a href="#" class="dropdown-item"><i class="fas fa-edit"></i>Edit</a>
+                          <div class="dropdown-divider"></div>
+                          <a href="#modal-confirm" class="dropdown-item text-danger" data-toggle="modal"><i class="fas fa-trash"></i>Delete</a>
+                        </div>
+                      </div>
+                  </td>
+                </tr>
+                <tr class="row-status-toBeDone">                     
+                  <td scope="row" class="id">
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1054</a>
+                  </td>  
+                  <td>
+                    <a href="#" data-toggle="popover" data-placement="top" data-content="It's empty. Yet.">
+                      <i class="far text-muted fa-comment-alt"></i>
+                    </a>
+                  </td>                  
+                  <td class="name">
+                    <div class="media-body">
+                      <strong>Nick Duddler</strong>
+                      <small>HR Manager</small>
+                    </div>
+                  </td>
+                  <td class="company">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>Venex Go</a>
+                  </td>
+                  <td class="customer">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>Documenter</a>
+                  </td>
+                  <td class="status">
+                    <div class="dropdown status-toBeDone">
+                      <a href="#" class="" id="status-row-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge text-white rounded-pill dropdown-toggle status-value"> </span>
+                        <div class="dropdown-menu" aria-labelledby="status-row-1">
+                            <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
+                            <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
+                            <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
+                            <div class="dropdown-divider"></div>
+<a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
+                        </div>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="lastModified">
+                    Today
+                  </td>
+                  <td class="col-actions text-right">
+                    <div class="dropdown" data-toggle="dropdown">
+                        <a href="#" class="action-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-h"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right menu-actions" aria-haspopup="true" aria-expanded="false">
+                          <a href="#" class="dropdown-item"><i class="fas fa-eye"></i>View</a>
+                          <a href="#" class="dropdown-item"><i class="fas fa-edit"></i>Edit</a>
+                          <div class="dropdown-divider"></div>
+                          <a href="#modal-confirm" class="dropdown-item text-danger" data-toggle="modal"><i class="fas fa-trash"></i>Delete</a>
+                        </div>
+                      </div>
+                  </td>
+                </tr>
+                <tr class="row-status-toBeDone">                     
+                  <td scope="row" class="id">
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1058</a>
+                  </td>  
+                  <td>
+                    <a href="#" data-toggle="popover" data-placement="top" data-content="It's empty. Yet.">
+                      <i class="far text-muted fa-comment-alt"></i>
+                    </a>
+                  </td>                  
+                  <td class="name">
+                    <div class="media-body">
+                      <strong>Alex Walkmer</strong>
+                      <small>Project Manager</small>
+                    </div>
+                  </td>
+                  <td class="company">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>JTX</a>
+                  </td>
+                  <td class="customer">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>Treegoos</a>
+                  </td>
+                  <td class="status">
+                    <div class="dropdown status-toBeDone">
+                      <a href="#" class="" id="status-row-8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge text-white rounded-pill dropdown-toggle status-value"> </span>
+                        <div class="dropdown-menu" aria-labelledby="status-row-8">
+                            <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
+                            <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
+                            <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
+                            <div class="dropdown-divider"></div>
+<a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
+                        </div>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="lastModified">
+                    Today
+                  </td>
+                  <td class="col-actions text-right">
+                    <div class="dropdown" data-toggle="dropdown">
+                        <a href="#" class="action-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-h"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right menu-actions" aria-haspopup="true" aria-expanded="false">
+                          <a href="#" class="dropdown-item"><i class="fas fa-eye"></i>View</a>
+                          <a href="#" class="dropdown-item"><i class="fas fa-edit"></i>Edit</a>
+                          <div class="dropdown-divider"></div>
+                          <a href="#modal-confirm" class="dropdown-item text-danger" data-toggle="modal"><i class="fas fa-trash"></i>Delete</a>
+                        </div>
+                      </div>
+                  </td>
+                </tr>
+                <tr class="row-status-inProgress">                     
+                  <td scope="row" class="id">
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1059</a>
+                  </td>  
+                  <td>
+                    <a href="#" data-toggle="popover" data-placement="top" data-content="It's empty. Yet.">
+                      <i class="far text-muted fa-comment-alt"></i>
+                    </a>
+                  </td>                  
+                  <td class="name">
+                    <div class="media-body">
+                      <strong>John Sullivan</strong>
+                      <small>PR Manager</small>
+                    </div>
+                  </td>
+                  <td class="company">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>Starter Gathering</a>
+                  </td>
+                  <td class="customer">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>The Number One Lab</a>
+                  </td>
+                  <td class="status">
+                    <div class="dropdown status-inProgress">
+                      <a href="#" class="" id="status-row-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge text-white rounded-pill dropdown-toggle status-value"> </span>
+                        <div class="dropdown-menu" aria-labelledby="status-row-3">
+                            <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
+                            <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
+                            <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
+                            <div class="dropdown-divider"></div>
+<a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
+                        </div>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="lastModified">
+                    3 days
+                  </td>
+                  <td class="col-actions text-right">
+                    <div class="dropdown" data-toggle="dropdown">
+                        <a href="#" class="action-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-h"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right menu-actions" aria-haspopup="true" aria-expanded="false">
+                          <a href="#" class="dropdown-item"><i class="fas fa-eye"></i>View</a>
+                          <a href="#" class="dropdown-item"><i class="fas fa-edit"></i>Edit</a>
+                          <div class="dropdown-divider"></div>
+                          <a href="#modal-confirm" class="dropdown-item text-danger" data-toggle="modal"><i class="fas fa-trash"></i>Delete</a>
+                        </div>
+                      </div>
+                  </td>
+                </tr>
+                <tr class="row-status-inProgress">                     
+                  <td scope="row" class="id">
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1060</a>
+                  </td>  
+                  <td>
+                    <a href="#" data-toggle="popover" data-placement="top" data-content="Decided to move to the system in order to get all teams across different cities to the same process to ensure stable growth in the European region">
+                      <i class="fas fa-comment-alt"></i>
+                    </a>
+                  </td>                  
+                  <td class="name">
+                    <div class="media-body">
+                      <strong>James Lewis</strong>
+                      <small>COO</small>
+                    </div>
+                  </td>
+                  <td class="company">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>The Runners</a>
+                  </td>
+                  <td class="customer">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>Documenter</a>
+                  </td>
+                  <td class="status">
+                    <div class="dropdown status-inProgress">
+                      <a href="#" class="" id="status-row-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge text-white rounded-pill dropdown-toggle status-value"> </span>
+                        <div class="dropdown-menu" aria-labelledby="status-row-3">
+                            <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
+                            <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
+                            <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
+                            <div class="dropdown-divider"></div>
+<a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
+                        </div>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="lastModified">
+                    2 days
+                  </td>
+                  <td class="col-actions text-right">
+                    <div class="dropdown" data-toggle="dropdown">
+                        <a href="#" class="action-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-h"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right menu-actions" aria-haspopup="true" aria-expanded="false">
+                          <a href="#" class="dropdown-item"><i class="fas fa-eye"></i>View</a>
+                          <a href="#" class="dropdown-item"><i class="fas fa-edit"></i>Edit</a>
+                          <div class="dropdown-divider"></div>
+                          <a href="#modal-confirm" class="dropdown-item text-danger" data-toggle="modal"><i class="fas fa-trash"></i>Delete</a>
+                        </div>
+                      </div>
+                  </td>
+                </tr>
+                <tr class="row-status-inProgress">                     
+                  <td scope="row" class="id">
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1061</a>
+                  </td>  
+                  <td>
+                    <a href="#" data-toggle="popover" data-placement="top" data-content="Decided to move to the system in order to get all teams across different cities to the same process to ensure stable growth in the European region">
+                      <i class="fas fa-comment-alt"></i>
+                    </a>
+                  </td>                  
+                  <td class="name">
+                    <div class="media-body">
+                      <strong>Danielle Levin</strong>
+                      <small>Head of Design</small>
+                    </div>
+                  </td>
+                  <td class="company">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>The Runners</a>
+                  </td>
+                  <td class="customer">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>Cleaning Masters</a>
+                  </td>
+                  <td class="status">
+                    <div class="dropdown status-inProgress">
+                      <a href="#" class="" id="status-row-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge text-white rounded-pill dropdown-toggle status-value"> </span>
+                        <div class="dropdown-menu" aria-labelledby="status-row-3">
+                            <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
+                            <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
+                            <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
+                            <div class="dropdown-divider"></div>
+<a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
+                        </div>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="lastModified">
+                    Yesterday
+                  </td>
+                  <td class="col-actions text-right">
+                    <div class="dropdown" data-toggle="dropdown">
+                        <a href="#" class="action-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-h"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right menu-actions" aria-haspopup="true" aria-expanded="false">
+                          <a href="#" class="dropdown-item"><i class="fas fa-eye"></i>View</a>
+                          <a href="#" class="dropdown-item"><i class="fas fa-edit"></i>Edit</a>
+                          <div class="dropdown-divider"></div>
+                          <a href="#modal-confirm" class="dropdown-item text-danger" data-toggle="modal"><i class="fas fa-trash"></i>Delete</a>
+                        </div>
+                      </div>
+                  </td>
+                </tr>
+                <tr class="row-status-inProgress">                     
+                  <td scope="row" class="id">
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1063</a>
+                  </td>  
+                  <td>
+                    <a href="#" data-toggle="popover" data-placement="top" data-content="It's empty! Yet.">
+                      <i class="far fa-comment-alt"></i>
+                    </a>
+                  </td>                  
+                  <td class="name">
+                    <div class="media-body">
+                      <strong>John Michael</strong>
+                      <small>VP of Engineering</small>
+                    </div>
+                  </td>
+                  <td class="company">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>Doom</a>
+                  </td>
+                  <td class="customer">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>Cleaning Masters</a>
+                  </td>
+                  <td class="status">
+                    <div class="dropdown status-inProgress">
+                      <a href="#" class="" id="status-row-6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge text-white rounded-pill dropdown-toggle status-value"> </span>
+                        <div class="dropdown-menu" aria-labelledby="status-row-3">
+                            <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
+                            <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
+                            <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
+                        </div>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="lastModified">
+                    Today
+                  </td>
+                  <td class="col-actions text-right">
+                    <div class="dropdown" data-toggle="dropdown">
+                        <a href="#" class="action-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-h"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right menu-actions" aria-haspopup="true" aria-expanded="false">
+                          <a href="#" class="dropdown-item"><i class="fas fa-eye"></i>View</a>
+                          <a href="#" class="dropdown-item"><i class="fas fa-edit"></i>Edit</a>
+                          <div class="dropdown-divider"></div>
+                          <a href="#modal-confirm" class="dropdown-item text-danger" data-toggle="modal"><i class="fas fa-trash"></i>Delete</a>
+                        </div>
+                      </div>
+                  </td>
+                </tr>
+                <tr class="row-status-done">                     
+                  <td scope="row" class="id">
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1064</a>
+                  </td>  
+                  <td>
+                    <a href="#" data-toggle="popover" data-placement="top" data-content="Decided to move to the system in order to get all teams across different cities to the same process to ensure stable growth in the European region">
+                      <i class="fas fa-comment-alt"></i>
+                    </a>
+                  </td>                  
+                  <td class="name">
+                    <div class="media-body">
+                      <strong>Parker Talor</strong>
+                      <small>PM</small>
+                    </div>
+                  </td>
+                  <td class="company">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>DeskMade</a>
+                  </td>
+                  <td class="customer">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>Treegoos</a>
+                  </td>
+                  <td class="status">
+                    <div class="dropdown status-done">
+                      <a href="#" class="" id="status-row-7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge text-white rounded-pill dropdown-toggle status-value"> </span>
+                        <div class="dropdown-menu" aria-labelledby="status-row-7">
+                            <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
+                            <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
+                            <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
+                        </div>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="lastModified">
+                    22 Days
+                  </td>
+                  <td class="col-actions text-right">
+                    <div class="dropdown" data-toggle="dropdown">
+                        <a href="#" class="action-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-h"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right menu-actions" aria-haspopup="true" aria-expanded="false">
+                          <a href="#" class="dropdown-item"><i class="fas fa-eye"></i>View</a>
+                          <a href="#" class="dropdown-item"><i class="fas fa-edit"></i>Edit</a>
+                          <div class="dropdown-divider"></div>
+                          <a href="#modal-confirm" class="dropdown-item text-danger" data-toggle="modal"><i class="fas fa-trash"></i>Delete</a>
+                        </div>
+                      </div>
+                  </td>
+                </tr>
+                <tr class="row-status-done">                     
+                  <td scope="row" class="id">
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1065</a>
+                  </td>  
+                  <td>
+                    <a href="#" data-toggle="popover" data-placement="top" data-content="It's empty! Yet.">
+                      <i class="far fa-comment-alt"></i>
+                    </a>
+                  </td>                  
+                  <td class="name">
+                    <div class="media-body">
+                      <strong>Pall Monroe</strong>
+                      <small>VP of PM</small>
+                    </div>
+                  </td>
+                  <td class="company">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>DeskMade</a>
+                  </td>
+                  <td class="customer">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>Treegoos</a>
+                  </td>
+                  <td class="status">
+                    <div class="dropdown status-done">
+                      <a href="#" class="" id="status-row-9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge text-white rounded-pill dropdown-toggle status-value"> </span>
+                        <div class="dropdown-menu" aria-labelledby="status-row-9">
+                            <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
+                            <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
+                            <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
+                        </div>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="lastModified">
+                    20 Days
+                  </td>
+                  <td class="col-actions text-right">
+                    <div class="dropdown" data-toggle="dropdown">
+                        <a href="#" class="action-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-h"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right menu-actions" aria-haspopup="true" aria-expanded="false">
+                          <a href="#" class="dropdown-item"><i class="fas fa-eye"></i>View</a>
+                          <a href="#" class="dropdown-item"><i class="fas fa-edit"></i>Edit</a>
+                          <div class="dropdown-divider"></div>
+                          <a href="#modal-confirm" class="dropdown-item text-danger" data-toggle="modal"><i class="fas fa-trash"></i>Delete</a>
+                        </div>
+                      </div>
+                  </td>
+                </tr>
+                <tr class="row-status-canceled">                     
+                  <td scope="row" class="id">
+                    <a href="request_details.html" class="id mb-0 h6 text-sm"><i class="fas fa-chevron-right mr-2"></i>1066</a>
+                  </td>  
+                  <td>
+                    <a href="#" data-toggle="popover" data-placement="top" data-content="Decided to move to the system in order to get all teams across different cities to the same process to ensure stable growth in the European region">
+                      <i class="fas fa-comment-alt"></i>
+                    </a>
+                  </td>                  
+                  <td class="name">
+                    <div class="media-body">
+                      <strong>Monroe Parker</strong>
+                      <small>CEO</small>
+                    </div>
+                  </td>
+                  <td class="company">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>Lohika</a>
+                  </td>
+                  <td class="customer">
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>Documenter</a>
+                  </td>
+                  <td class="status">
+                    <div class="dropdown status-canceled">
+                      <a href="#" class="" id="status-row-10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge text-white rounded-pill dropdown-toggle status-value"> </span>
+                        <div class="dropdown-menu" aria-labelledby="status-row-10">
+                            <a class="dropdown-item status-link-toBeDone" href="#"><span class="status-circule status-toBeDone"></span></a>
+                            <a class="dropdown-item status-link-inProgress" href="#"><span class="status-circule status-inProgress"></span></a>
+                            <a class="dropdown-item status-link-done" href="#"><span class="status-circule status-done"></span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item status-link-canceled" href="#"><span class="status-circule status-canceled"></span></a>
+                        </div>
+                      </a>
+                    </div>
+                  </td>
+                  <td class="lastModified">
+                    5 Days
+                  </td>
+                  <td class="col-actions text-right">
+                    <div class="dropdown" data-toggle="dropdown">
+                        <a href="#" class="action-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-h"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right menu-actions" aria-haspopup="true" aria-expanded="false">
+                          <a href="#" class="dropdown-item"><i class="fas fa-eye"></i>View</a>
+                          <a href="#" class="dropdown-item"><i class="fas fa-edit"></i>Edit</a>
+                          <div class="dropdown-divider"></div>
+                          <a href="#modal-confirm" class="dropdown-item text-danger" data-toggle="modal"><i class="fas fa-trash"></i>Delete</a>
+                        </div>
+                      </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Pagination -->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>      
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="footer pt-5 pb-4 footer-light" id="footer-main">
+      <div class="row text-center text-sm-left align-items-sm-center">
+        <div class="col-sm-6">
+          <p class="text-sm mb-0">&copy; 2019 <a href="https://choicery.io" class="h6 text-sm" target="_blank">Choicery</a>. All rights reserved.</p>
+        </div>
+        <div class="col-sm-6 mb-md-0">
+          <ul class="nav justify-content-center justify-content-md-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Terms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pr-0" href="#">Privacy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Scripts -->
+  <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
+  <script src="../assets/js/purpose.core.js"></script>
+  <!-- Page JS -->
+  <script src="../assets/libs/progressbar.js/dist/progressbar.min.js"></script>
+  <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+  <script src="../assets/libs/moment/min/moment.min.js"></script>
+  <script src="../assets/libs/select2/dist/js/select2.min.js"></script>
+  <!-- Purpose JS -->
+  <script src="../assets/js/purpose.js"></script>
+  <!-- Demo JS - remove it when starting your project -->
+  <script src="../assets/js/demo.js"></script>
+</body>
+
+</html>
