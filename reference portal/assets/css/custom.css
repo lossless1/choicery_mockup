@@ -327,7 +327,8 @@ p, a, h1, h2, h3, h4, h5, h6{
   padding: 4px;
 }
 .buddies-list-card .about-company .company-logo{
-  max-width: 100%;
+  max-width: 80%;
+  margin-bottom: 16px;
 }
 .buddies-list-card .about-company p{
   font-size: 12px;
