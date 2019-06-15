@@ -7,41 +7,24 @@
 
 /*------------------Requests------------------*/
 .customers-logo img.clogo{
-  width: 80px;
+  height: 40px;
+  max-width: 80px;
 }
 .table-flag{
   width: 16px;
   margin-right: 4px;
   margin-top: -2px;
 }
-.name .media-body strong{
+.name .media-body strong, .reference .media-body strong{
   font-size: 1em;
   color:#333;
 }
-.name .media-body small{
+.name .media-body small, .reference .media-body small{
   font-size: 0.9em;
   display: block;
 }
 .id a.id{
   color:#3E50B4;
-}
-td.contacts a{
-  margin-right: 8px;
-}
-td.contacts a, td.contacts a i{
-  font-size: 20px;
-}
-td.contacts a i.color-phone{
-  color:#45A523;
-}
-td.contacts a i.color-li{
-  color:#0073b1;
-}
-td.contacts a i.color-fb{
-  color:#3B5999;
-}
-td.contacts a i.color-tw{
-  color:#1DA1F2;
 }
 .row-status-toBeDone{
   background-color: #fcf3ea !important;
