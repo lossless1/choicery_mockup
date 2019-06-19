@@ -160,11 +160,20 @@
                 <dt class="col-sm-3 h6 text-sm">Company</dt>
                 <dd class="col-sm-9 text-sm">Cleaning Masters</dd>
 
+                <dt class="col-sm-3 h6 text-sm">Description</dt>
+                <dd class="col-sm-9 text-sm">Home and Office Cleaning services</dd>
+
                 <dt class="col-sm-3 h6 text-sm">Website</dt>
-                <dd class="col-sm-9 text-sm"><a href="#" target="_blank">www.Intalere.com</a></dd>
+                <dd class="col-sm-9 text-sm"><a href="#" target="_blank">www.cleaningmasters.com</a></dd>
 
                 <dt class="col-sm-3 h6 text-sm">CRM</dt>
                 <dd class="col-sm-9 text-sm"><a href="#">Link</a></dd>
+
+                <dt class="col-sm-3 h6 text-sm">Country</dt>
+                <dd class="col-sm-9 text-sm">USA</dd>
+
+                <dt class="col-sm-3 h6 text-sm">City</dt>
+                <dd class="col-sm-9 text-sm">San Francisco</dd>
               </dl>
             </div>
             <div class="col-12 col-md-6">
@@ -172,6 +181,43 @@
               <dl class="row mt-4 align-items-center">
                 <dt class="col-sm-3 h6 text-sm">Fullname</dt>
                 <dd class="col-sm-9 text-sm">Ariana Barros</dd>
+
+                <dt class="col-sm-3 h6 text-sm">Editable mode</dt>
+                <dd class="col-sm-9 text-sm">
+                  <div class="input-group edit-group">
+                    <input type="text" class="form-control form-control-sm" placeholder="Fullname" value="Ariana Barros">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary btn-editable btn-editable-save btn-sm text-success" type="button">
+                        <i class="fas fa-check"></i>
+                      </button>
+                      <button class="btn btn-outline-secondary btn-editable btn-editable-cancel btn-sm text-danger" type="button">
+                        <i class="fas fa-times"></i>
+                      </button>
+                    </div>
+                  </div>
+                </dd>
+                <style>
+
+                  .edit-group input.form-control{
+                    padding: 0.5rem;
+                    margin-left: -10px;
+                  }
+                  .edit-group .input-group-append .btn-editable, .edit-group input.form-control:focus{
+                    border-color:#E0E6ED;
+                  }
+                  .edit-group .input-group-append .btn-editable{
+                    width: 48px;
+                    padding: 0px;
+                    text-align: center;
+                  }
+                  .edit-group .input-group-append .btn-editable-save{
+                    margin: 0px;
+                  }
+                  .edit-group .input-group-append .btn-editable-cancel{
+                    margin-right: 0px;
+                    margin-left: -1px;
+                  }
+                </style>
 
                 <dt class="col-sm-3 h6 text-sm">Position</dt>
                 <dd class="col-sm-9 text-sm">Product Manager</dd>
@@ -184,7 +230,6 @@
         </div>
       </div>
     </div>
-
   </div>
   
   <div class="container">
