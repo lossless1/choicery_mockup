@@ -236,22 +236,29 @@ nav .pagination{
 
 /*----------------------Editable Forms------------*/
 
-.edit-group input.form-control{
+.edit-group input.form-control, .edit-group textarea.form-control{
   padding: 0.5rem;
   margin-left: -10px;
 }
-.edit-group .input-group-append .btn-editable, .edit-group input.form-control:focus{
+.edit-group textarea.form-control{
+  width: 100%;
+}
+.edit-group div.input-group{
+  margin-left: -10px;
+}
+.edit-group .btn-editable, .edit-group input.form-control:focus, .edit-group textarea.form-control:focus{
   border-color:#E0E6ED;
 }
-.edit-group .input-group-append .btn-editable{
+.edit-group .btn-editable{
   width: 48px;
+  height: 39px;
   padding: 0px;
   text-align: center;
 }
-.edit-group .input-group-append .btn-editable-save{
+.edit-group .btn-editable-save{
   margin: 0px;
 }
-.edit-group .input-group-append .btn-editable-cancel{
+.edit-group .btn-editable-cancel{
   margin-right: 0px;
   margin-left: -1px;
 }
